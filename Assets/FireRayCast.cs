@@ -28,13 +28,13 @@ public class FireRayCast : MonoBehaviour {
 		}
 		transform.LookAt(shootToward);
 		
-		if( Input.GetMouseButtonDown(0) )
+		/*if( Input.GetMouseButtonDown(0) )
 		{
 			GameObject shotGO = (GameObject)Instantiate(bulletObject, fireFrom.position, fireFrom.rotation);
 			Vector3 deltaPos = shootToward - shotGO.transform.position;
 			shotGO.rigidbody.velocity = deltaPos.normalized * shotSpeed;
 			
-		}
+		}*/
 	}
 	
 	

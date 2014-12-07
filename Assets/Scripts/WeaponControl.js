@@ -39,6 +39,17 @@ function Update () {
 		{
 			currentweapon=3;
 		}
+		if(Input.GetMouseButtonDown(1))
+		{
+			Debug.Log(currentweapon);
+			if (currentweapon==3)
+			{
+			currentweapon=1;
+			}
+			else
+			currentweapon+=1;
+			
+		}
 		CurrentWeapon=currentweapon;
 		
 		

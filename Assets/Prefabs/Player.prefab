@@ -418,7 +418,6 @@ GameObject:
   - 114: {fileID: 11400002}
   - 114: {fileID: 11400000}
   - 136: {fileID: 13600000}
-  - 114: {fileID: 11400004}
   - 114: {fileID: 11400006}
   - 82: {fileID: 8200000}
   - 81: {fileID: 8100000}
@@ -1326,8 +1325,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100054}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.93120003, y: 4.89949989, z: -36.112999}
+  m_LocalRotation: {x: .0132608423, y: -.832431793, z: .066830121, w: .549922884}
+  m_LocalPosition: {x: 922.039978, y: 7.65999985, z: 727.210022}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 400100}
@@ -2069,26 +2068,6 @@ MonoBehaviour:
   rotateSpeed: 500
   trotAfterSeconds: 2
   canJump: 1
---- !u!114 &11400004
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100054}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 39e76e10c67257a4a8e76a59dff52995, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  obText1: {fileID: 0}
-  obText2: {fileID: 0}
-  bridge: {fileID: 0}
-  ob1: {fileID: 0}
-  ob2: {fileID: 0}
-  toolText1: {fileID: 0}
-  toolText2: {fileID: 0}
-  toolText3: {fileID: 11400000, guid: 5a4cf38d06e25ea4e8df4a3eb85c7509, type: 2}
-  blocked: {fileID: 8300000, guid: 7eb5f5270fc84884395254d70042e760, type: 3}
 --- !u!114 &11400006
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2159,9 +2138,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae62fe0df68bcc043ac8b46e1ef32670, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletObject: {fileID: 0}
+  bulletObject: {fileID: 100000, guid: 2c75819e5a9dca04aa1c86141fc09193, type: 2}
   aimCursor: {fileID: 0}
-  fireFrom: {fileID: 0}
+  fireFrom: {fileID: 400032}
   shotSpeed: 20
   crosshairImage: {fileID: 0}
 --- !u!136 &13600000
