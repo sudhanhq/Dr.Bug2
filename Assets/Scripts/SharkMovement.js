@@ -11,6 +11,7 @@ function Start () {
    target = GameObject.FindWithTag("Player").transform; //target the player
     isactive=false;
     isattacking=false;
+
 }
 
 function Update () {
@@ -26,8 +27,8 @@ function Update () {
 	
      if (transform.position.y >0 )  
      {  
-     transform.position=Vector3(transform.position.x,0,transform.position.z);
-     Debug.Log(  transform.position);
+     transform.position=Vector3(transform.position.x,-1,transform.position.z);
+  
      }
      else
      transform.position=Vector3(transform.position.x,transform.position.y ,transform.position.z);
@@ -43,6 +44,7 @@ function Update () {
 	
 			//transform.position+=Vector3.forward  *normalspeed* Time.deltaTime;
 		
+			    audio.Play();
 		}
 		if (ztarget>= (triggerdistance*1.8) && isattacking==false && isactive == true)
 		{

@@ -16,23 +16,27 @@ var toolText3: Text;
 public var blocked : AudioClip;
 
 function Awake(){
-toolText3.enabled = false;
+if (Application.loadedLevelName== "Level1")
+{
+	toolText3.enabled = false;
 
-obText1.enabled = false;
-obText2.enabled = false;
-toolText1.enabled = false;
-toolText2.enabled = false;
-toolText3.enabled = false;
-
+	obText1.enabled = false;
+	obText2.enabled = false;
+	toolText1.enabled = false;
+	toolText2.enabled = false;
+	toolText3.enabled = false;
+}
 }
 
 function Start () {
-obText1.enabled = false;
-obText2.enabled = false;
-toolText1.enabled = false;
-toolText2.enabled = false;
-toolText3.enabled = false;
-
+if (Application.loadedLevelName== "Level1")
+{
+	obText1.enabled = false;
+	obText2.enabled = false;
+	toolText1.enabled = false;
+	toolText2.enabled = false;
+	toolText3.enabled = false;
+}
 //endLevelPanel.SetActive(false);
 }
 
